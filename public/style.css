@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#qaq-chat {
+    width: 80vw;
+    margin: 10vh auto;
+    border: 1px solid #bbb;
+    background: #eef;
+    border-radius: 0.2rem;
+}
+#qaq-chat h2 {
+    background-color: #fff;
+    color: purple;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+#qaq-chat #chat-window {
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+#qaq-chat #handle,
+#qaq-chat #message {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+}
+#qaq-chat #handle {
+    border-bottom: 1px solid rgb(243, 242, 242);
+}
+#qaq-chat #send {
+    width: 100%;
+    border: none;
+    padding: 0.8rem 0;
+    text-align: center;
+    background: plum;
+    outline: none;
+    cursor: pointer;
+}
+
+/* 消息列表 */
+#qaq-chat #output {
+    width: 100%;
+}
+#qaq-chat #output p {
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    color: #fff;
+}
+#qaq-chat #output p strong {
+    margin: 0.3rem 0;
+    color: rgb(179, 47, 179);
+}
+#qaq-chat #output p span {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.3rem 1rem;
+    background: palevioletred;
+    border-radius: 0.3rem;
+}
+
+
+#qaq-chat #output p:first-child {
+    border-top: none;
+}
+/* 自己的消息 */
+#qaq-chat #output .self {
+    text-align: right;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    color: #fff;
+}
+#qaq-chat #output .self span {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.3rem 1rem;
+    background: greenyellow;
+    border-radius: 0.3rem;
+}
+
+
+
+/* 正在输入 */
+#qaq-chat #feedback p {
+    padding: 1rem;
+    color: #bbb;
+}
+
+
+
+

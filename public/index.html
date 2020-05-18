@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 socket.io 客户端的配置文件 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"
+        integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" crossorigin="anonymous"></script>
+    <title>QAQ聊天室</title>
+</head>
+<body>
+    <div id="qaq-chat">
+        <h2>QAQ聊天室</h2>
+        <!-- 聊天窗口 -->
+        <div id="chat-window">
+            <!-- 输入的消息 -->
+            <div id="output"></div>
+            <!-- xxx正在输入的提示 -->
+            <div id="feedback"></div>
+        </div>
+
+        <!-- 昵称 -->
+        <input type="text" id="handle" required placeholder="昵称">
+        <input type="text" id="message" placeholder="消息">
+        <button id="send" type="button" >发送</button>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
