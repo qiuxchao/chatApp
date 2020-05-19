@@ -4,7 +4,7 @@
   "description": "这是一个聊天应用",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "node index.js"
   },
   "author": "QiuXc",
   "license": "ISC",
